@@ -1,32 +1,4 @@
 ########################################################################################################################
-# REMARKS
-########################################################################################################################
-'''
-## Coding
-- please note, this not SE course and much of the code in ML is more akin to executing workflows
-- please try to use the scripts as a documentation of yur analysis, including comments, results and interporetations
-
-## GRADING
-- Please refer to the moodle course for grading information
-
-## UPLOAD
-- upload your solution on Moodle as: "yourLASTNAME_yourFIRSTNAME_yourMOODLE-UID___exercise_blockX.py" </b>
-- please no non-ascii characters on last/first name :)
-- NO zipfile, NO data!, ONLY the .py file!
-
-## PRE-CODED Parts
-- all exercises might contain parts which where not yet discussed in the course
-- these sections are pre-coded then and you are encouraged to research their meaning ahead of the course
-- so, if you find something in the exercise description you haven´t heard about, look at the ode section and check if this is pre-coded
-
-## ERRORS
-- when you open exercise files you'll see error (e.g. unassigned variables)
-- this is due to the fact that some parts are missing, and you should fill them in
-'''
-
-
-
-########################################################################################################################
 # IMPORTS
 ########################################################################################################################
 
