@@ -222,7 +222,6 @@ for k in np.arange(1, 8, 1):
     for train_idx, test_idx in kf.split(X_scale, y):
         # split the dataset into a train and a test set
         X_train, X_test = X_scale[train_idx], X_scale[test_idx]
-        # split the target variable into a train and a test set
         y_train, y_test = y[train_idx], y[test_idx]
 
         # training and prediction of the model
@@ -336,7 +335,6 @@ for k in np.arange(1, 8, 1):
     for train_idx, test_idx in sss.split(X_scale, y):
         # split the dataset into a train and a test set
         X_train, X_test = X_scale[train_idx], X_scale[test_idx]
-        # split the target variable into a train and a test set
         y_train, y_test = y[train_idx], y[test_idx]
 
         # training and prediction of the model
