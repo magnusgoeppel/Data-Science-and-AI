@@ -84,7 +84,7 @@ the footer is also a problem, skip it with skipfooter
 '''
 
 print("---------------------------------------------------------------------------------------------------------------")
-print(">>> step 1,2,3 just try it, use skip rows, use skipfooter \n")
+print(">>> step 1,2,3 just try it, use skip rows, use skipfooter")
 print("---------------------------------------------------------------------------------------------------------------")
 print()
 
