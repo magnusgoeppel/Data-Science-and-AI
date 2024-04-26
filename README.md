@@ -5,8 +5,8 @@ Im Laufe der Zeit wird dieses um die folgenden Übungen erweitert:
 
 - DataFrame/ML 
 - Train/Test/Split 
+- KNN
 - Data Handling 
-- KNN 
 - Trees
 - Linear Regression
 - Clustering 
