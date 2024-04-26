@@ -4,8 +4,8 @@ Dieses Repository ist eine Sammlung von Übungen, aus dem Fach 4. Semesterfach D
 Im Laufe der Zeit wird dieses um die folgenden Übungen erweitert:
 
 - DataFrame/ML 
-- Train/Test/Split 
-- KNN
+- Train/Test/Split
+- KNN 
 - Data Handling 
 - Trees
 - Linear Regression
