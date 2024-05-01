@@ -1,0 +1,29 @@
+@startuml
+
+
+start
+
+:Read data from file into DataFrame;
+
+:Initialize results list;
+
+repeat :For each feature (excluding 'class');
+  :Sort unique values of current feature;
+
+  repeat :For each value in sorted unique values;
+    :Split data into left and right based on current value;
+
+    if (left and right are not empty)
+      :Calculate information gain;
+      :Calculate entropy for left and right partitions;
+      :Store feature, value, information gain, and entropies in results list;
+    endif
+  repeat while (Any more values?)
+
+repeat while (Any more features?)
+
+:Create results DataFrame from list and print it;
+
+stop
+
+@enduml
