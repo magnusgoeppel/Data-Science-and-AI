@@ -1,0 +1,32 @@
+@startuml
+
+start
+
+:Read CSV data into DataFrame;
+
+partition "Linear Regression Model" {
+    :Extract feature (alcohol);
+    :Extract target (quality);
+    :Create Linear Regression model;
+    :Fit model with data;
+    :Predict quality using the model;
+}
+
+partition "Visualization" {
+    :Setup plot dimensions and labels;
+    :Plot true quality vs alcohol content \n(blue circles);
+    :Plot predicted quality vs alcohol content \n(red x-symbols);
+    :Draw lines between predicted and true qualities \n(green lines);
+    :Draw regression line;
+    :Display legend and title;
+    :Show plot;
+}
+
+partition "Error Calculation" {
+    :Calculate Mean Squared Error (MSE);
+    :Print MSE;
+}
+
+stop
+
+@enduml
