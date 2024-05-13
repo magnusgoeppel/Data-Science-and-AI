@@ -56,13 +56,14 @@ df = df[
 sns.jointplot(data=df, x="Total_visits_online", y="Avg_Credit_Limit", kind="kde")
 sns.jointplot(data=df, x="Total_visits_online", y="Avg_Credit_Limit", kind="hist")
 
-# implement k-means #
+# implement k-means
 m = np.array([[2.5, 100000], [10.0, 125000]])  # we use two cluster centers
+m_df = pd.DataFrame(m, columns=df.columns)
 
 # scale the data first and afterwards m ! (So that that m does not jump to extreme values)
 scaler = MinMaxScaler()
 df_scaled = scaler.fit_transform(df)
-m_scaled = scaler.transform(m)
+m_scaled = scaler.transform(m_df)
 
 # iterate
 for i in range(10):
@@ -76,13 +77,13 @@ for i in range(10):
         clusters[j] = np.argmin(distances[j])  # assign to cluster
 
     # k-means #2 ... means update
-    for j in range(m_scaled.shape[0]): # for each cluster
+    for j in range(m_scaled.shape[0]):  # for each cluster
         m_scaled[j] = np.mean(df_scaled[clusters == j], axis=0)  # update cluster center
 
     # visualize results
-    plt.figure(figsize=(10, 6))
+    plt.figure()
     colors = ['red', 'blue']
-    for j in range(m_scaled.shape[0]): # for each cluster
+    for j in range(m_scaled.shape[0]):  # for each cluster
         cluster_data = df_scaled[clusters == j]  # get data points of cluster j
         plt.scatter(cluster_data[:, 0], cluster_data[:, 1], c=colors[j], label=f'Cluster {j}')  # plot data points
     plt.scatter(m_scaled[:, 0], m_scaled[:, 1], c='black', s=300, label='Centroids', marker='*')  # plot centroids
