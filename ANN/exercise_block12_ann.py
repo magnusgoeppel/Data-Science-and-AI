@@ -100,8 +100,7 @@ output = 0.7
 input = [9, 3]
 architecture = [2, 3, 4, 1]
 
-print("Architecture: ", randomArchitecture(architecture))
-"""
+
 for i in np.arange(100):
     print("Iteration " + str(i) + ": ")
     nn = randomArchitecture(architecture)
@@ -109,4 +108,3 @@ for i in np.arange(100):
     error = abs(out[0] - output)
     print("error: ", error)
     print()
-"""""
