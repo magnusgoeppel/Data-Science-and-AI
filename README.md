@@ -1,7 +1,6 @@
-# Data Science und Machine Learning Übungen
+# Data Science and Machine Learning Exercises
 
-Dieses Repository ist eine Sammlung von Übungen, aus dem 4. Semesterfach Data Science und Machine Learning. 
-Im Laufe der Zeit wird dieses um die folgenden Übungen erweitert:
+This repository is a collection of the following exercises from the 4th-semester course Data Science and Machine Learning:
 
 - DataFrame/ML 
 - Train/Test/Split
